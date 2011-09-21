@@ -1,0 +1,36 @@
+<!--
+    TITLE: Ant Build script
+    DATE                AUTEUR                     HISTORIQUE
+    2006-08-27          Alex Belisle-Turcot        Version Initiale                     
+-->
+
+<project name="inspection" default="updateversion" basedir=".">
+
+
+	<property file="build.properties" />
+
+	<echo message="____________________________________" />
+	<echo message="Ant environnement : ${TODAY} (${timestamp})" />
+	<echo message="" />
+	<echo message="JVM version            : ${ant.java.version}" />
+	<echo message="" />
+
+	<echo message="Base directory         : ${basedir}" />
+	<echo message="Sources                : ${src.dir}" />
+	<echo message="Binaries               : ${bin.dir}" />
+	<echo message="" />
+	<echo message="____________________________________" />
+
+
+<target name="updateversion" depends="">
+	 <!--====================================================-->
+	<!-- update version                                            -->
+	<!--====================================================-->
+
+	<echo file="version" append="false">${version}</echo>
+
+
+	</target>
+
+
+</project>
