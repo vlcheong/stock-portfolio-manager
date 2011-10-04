@@ -27,7 +27,7 @@
 	<!-- update version                                            -->
 	<!--====================================================-->
 
-	<echo file="version" append="false">${version}</echo>
+	<echo file="latestversion" append="false">${version}</echo>
 
 
 	</target>
